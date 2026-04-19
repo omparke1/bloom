@@ -29,14 +29,15 @@
         <img src="images/bloom-storefront.jpg" alt="bloom storefront image">
 
         <section id="shop">
+            <h2>Shop</h2>
             <section class="plants">
-                <h2>Marguerite Daisy</h2>
+                <h3>Marguerite Daisy</h3>
                 <img src="images/white-butterfly.jpg" alt="white marguerite daisy's in flower pot.">
-                <h3>Exposure</h3>
+                <h4>Exposure</h4>
                 <p>Part to Sun</p>
                 <p>Full Sun</p>
 
-                <h3>Flower Season</h3>
+                <h4>Flower Season</h4>
                 <ul class="season">
                     <li>Early Spring</li>
                     <li>Spring</li>
@@ -47,12 +48,12 @@
 
 
             <section class="plants">
-                <h2>Summer Snapdragon</h2>
+                <h3>Summer Snapdragon</h3>
                 <img src="images/angel-face-pink.jpg" alt="Pink summer snapdragon in blue flower pot.">
-                <h3>Exposure</h3>
+                <h4>Exposure</h4>
                 <p>Full Sun</p>
 
-                <h3>Flower Season</h3>
+                <h4>Flower Season</h4>
                 <ul class="season">
                     <li>Spring</li>
                     <li>Summer</li>
@@ -61,12 +62,12 @@
             </section>
 
             <section class="plants">
-                <h2>Red Begonia</h2>
+                <h3>Red Begonia</h3>
                 <img src="images/double-up.jpg" alt="Red Begonia flower in white flower pot.">
-                <h3>Exposure</h3>
+                <h4>Exposure</h4>
                 <p>Sun or Shade</p>
 
-                <h3>Flower Season</h3>
+                <h4>Flower Season</h4>
                 <ul class="season">
                     <li>Spring</li>
                     <li>Summer</li>
@@ -74,13 +75,13 @@
             </section>
 
             <section class="plants">
-                <h2>White Bush Violet</h2>
+                <h3>White Bush Violet</h3>
                 <img src="images/bush-violet.jpg" alt="White Bush Violet in flower pot.">
-                <h3>Exposure</h3>
+                <h4>Exposure</h4>
                 <p>Part Shade</p>
                 <p>Shade</p>
 
-                <h3>Flower Season</h3>
+                <h4>Flower Season</h4>
                 <ul class="season">
                     <li>Spring</li>
                     <li>Summer</li>
@@ -88,13 +89,13 @@
             </section>
 
             <section class="plants">
-                <h2>Blue Superbells</h2>
+                <h3>Blue Superbells</h3>
                 <img src="images/super-bells.jpg" alt="Purple superbell flowers in flower pot.">
-                <h3>Exposure</h3>
+                <h4>Exposure</h4>
                 <p>Part to Sun</p>
                 <p>Full Sun</p>
 
-                <h3>Flower Season</h3>
+                <h4>Flower Season</h4>
                 <ul class="season">
                     <li>Spring</li>
                     <li>Summer</li>
@@ -103,13 +104,13 @@
             </section>
 
             <section class="plants">
-                <h2>Double Twilight Superbells</h2>
+                <h3>Double Twilight Superbells</h3>
                 <img src="images/super-bell-twilight.jpg" alt="Multicolored Twilight Superbells in flower pot.">
-                <h3>Exposure</h3>
+                <h4>Exposure</h4>
                 <p>Part to Sun</p>
                 <p>Full Sun</p>
 
-                <h3>Flower Season</h3>
+                <h4>Flower Season</h4>
                 <ul class="season">
                     <li>Spring</li>
                     <li>Summer</li>
@@ -119,8 +120,9 @@
         </section>
 
         <section id="learn">
+            <h2>Learn</h2>
             <section class="tips">
-                <h2>Container Gardening 101:</h2>
+                <h3>Container Gardening 101:</h3>
                 <img src="images/container-plants.jpg" alt="plants in flowerpots outside.">
                 <p>Container gardening is fun, easy and rewarding. Think of all the creative possibilities!
 
@@ -130,7 +132,7 @@
             </section>
 
             <section class="tips">
-                <h2>Best Year-Round Indoor Plants: Low Maintenance Greenery</h2>
+                <h3>Best Year-Round Indoor Plants: Low Maintenance Greenery</h3>
                 <img src="images/indoor-plant.jpg" alt="Indoor plant in flower pot being held indoors.">
                 <p>Looking for the best year-round indoor plants to keep your space green in every season? These hardy, low-maintenance picks thrive all year long — even during the cold winter months. From bold statement plants to compact, easy-care favorites, these selections are perfect for homes, offices, and dorm rooms that need lasting greenery without extra fuss.
                 </p>
@@ -139,14 +141,41 @@
         </section>
 
         <section id="about">
-            
+            <h2>About Us</h2>
+            <p>Bloom is a brand that aims to create better environments for those that shop with us! We offer various plant options that can be picked up in store or delivered right to your house. We aim to help our community by providing educational advice and tips about plants to make gardening simple for all experience levels. At Bloom we grow together!</p>
+            <img src="images/sun.png" alt="sun icon">
         </section>
 
         <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+            <label for="fullName">Full Name*</label>
+            <input name="fullName" id="fullName" type="text" required>
+
+            <label for="pNum">Phone Number*</label>
+            <input name="pNum" id="pNum" type="tel" required>
+
+            <label for="emailAd">Email Address*</label>
+            <input name="emailAd" id="emailAd" type="mail" required>
+
+            <label for="comment">Comments*</label>
+            <textarea name="comment" id="comment" type="text" required></textarea>
             
+            <legend>Preferred Method of Contact*</legend>
+            <label for="radioB">Phone</label>
+            <input name="radioB" id="phoneP" type="radio" required>
+
+            <label for="radioB">Email</label>
+            <input name="radioB" id="emailP" type="radio" required>
+
+            <input type="submit" name="submit">
+            </form>
+
         </section>
 
         <section id="cart-dropdown">
+            <h2>Cart</h2>
             <button id="cart-btn">Cart (0)</button>
             <div id="cart-content" class="dropdown-content">
                 <ul id="cart-items"></ul>
