@@ -24,7 +24,6 @@
         </nav>
     </header>
 
-    <body>
     <main>
         <img src="images/bloom-storefront.jpg" alt="bloom storefront image">
 
@@ -157,17 +156,19 @@
             <input name="pNum" id="pNum" type="tel" required>
 
             <label for="emailAd">Email Address*</label>
-            <input name="emailAd" id="emailAd" type="mail" required>
+            <input name="emailAd" id="emailAd" type="email" required>
 
             <label for="comment">Comments*</label>
-            <textarea name="comment" id="comment" type="text" required></textarea>
+            <textarea name="comment" id="comment" required></textarea>
             
-            <legend>Preferred Method of Contact*</legend>
-            <label for="radioB">Phone</label>
-            <input name="radioB" id="phoneP" type="radio" required>
+            <fieldset>
+                <legend>Preferred Method of Contact*</legend>
+                <label for="phoneP">Phone</label>
+                <input name="radioB" id="phoneP" type="radio" required>
 
-            <label for="radioB">Email</label>
-            <input name="radioB" id="emailP" type="radio" required>
+                <label for="emailP">Email</label>
+                <input name="radioB" id="emailP" type="radio" required>
+            </fieldset>
 
             <input type="submit" name="submit">
             </form>
