@@ -82,20 +82,81 @@ table {
 
       body{
         font-family: var(--main-text);
+        padding-top: 2.5rem;
+        background: #F2F3EE;
       }
     
       h1, h2{
-        font-family: var(--main-text);
+        font-family: var(--main-title);
       }
     
       h3{
         font-family: var(--sub-title);
       }
+      
+    #skip {
+    color: black;
+    background: var(--white);
+    display: block;
+    width: 100%;
+    padding-top: .75rem;
+    position: absolute;
+    top: 0;
+    }
 
-@media screen and (max-width: 1280px){
+    header{
+      background: var(--dark-green);
+      color: var(--white);
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
 
-  #skip {
-    text-decoration: none;
-    margin: 1rem;
-  }
-}
+    .header-left{
+      display: flex;
+      align-items: center;
+    }
+
+    .header-left img{
+      width: 80px;
+      height: auto;
+    }
+
+    h1{
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .header-right{
+      display: flex;
+      align-items: center;
+    }
+
+    header nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+      margin-right: .5rem;
+    }
+
+    header nav ul li a img {
+      width: 25px;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    header ul a {
+      text-decoration: none;
+      color: black;
+      margin-right: 1rem;
+    }
+
+    #color-mode {
+      width: 50px;
+      height: auto;
+      margin-right: 3rem;
+    }
+
+
