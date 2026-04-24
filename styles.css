@@ -80,6 +80,22 @@ table {
           "ROND" 0;
       }
 
+      body{
+        font-family: var(--main-text);
+      }
+    
+      h1, h2{
+        font-family: var(--main-text);
+      }
+    
+      h3{
+        font-family: var(--sub-title);
+      }
+
 @media screen and (max-width: 1280px){
 
+  #skip {
+    text-decoration: none;
+    margin: 1rem;
+  }
 }
