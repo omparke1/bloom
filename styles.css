@@ -80,9 +80,10 @@ table {
           "ROND" 0;
       }
 
-      body.light-mode{
-        background-color: var(--white);
-        color: var(--dark-green);
+      body{
+        font-family: var(--main-text);
+        padding-top: 2.5rem;
+      color: var(--dark-green);
       }
 
       body.dark-mode{
@@ -90,22 +91,23 @@ table {
         color: var(--white);
       }
 
-      #theme-toggle{
-        width: 10%;
+body.dark-mode header {
+  background: var(--light-pink);
+  color: black;
+}
+
+body.dark-mode ul li a {
+  color: black;
+}
+
+      #color-mode{
+        margin-right: 3rem;
+        width: 12%;
         height: auto;
         cursor: pointer;
-        background: var(--light-green);
+        background: var(--white);
         border-radius: 4.5rem;
         border: 1px solid var(--bright-pink);
-      }
-
-      #color-mode img{
-        margin-right: 3rem;
-      }
-
-      body{
-        font-family: var(--main-text);
-        padding-top: 2.5rem;
       }
     
       h1, h2{
@@ -115,16 +117,20 @@ table {
       h3{
         font-family: var(--sub-title);
       }
+
+      a {
+        font-family: var(--sub-title);
+      }
       
     #skip {
     color: black;
     background: var(--white);
     display: block;
     width: 100%;
-    padding-top: .75rem;
+    padding: .75rem;
     position: absolute;
     top: 0;
-    padding-bottom: .75rem;
+    left: 0rem;
     }
 
     header{
@@ -174,6 +180,10 @@ table {
       text-decoration: none;
       color: var(--white);
       margin-right: 1rem;
+    }
+
+    #nav-icon img{
+      color: var(--white)
     }
 
 
