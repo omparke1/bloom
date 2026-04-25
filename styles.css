@@ -81,10 +81,16 @@ table {
           "ROND" 0;
       }
 
+
       body{
         font-family: var(--main-text);
         padding-top: 2.5rem;
       background: var(--white);
+      }
+
+      html, body {
+        max-width: 100%;
+        overflow-x: hidden;
       }
 
       body.dark-mode{
@@ -152,7 +158,7 @@ body.dark-mode header {
     }
 
     h1{
-      font-size: 2.5rem;
+      font-size: 25pt;
       margin-top: .5rem;
       font-weight: bold;
     }
@@ -194,6 +200,57 @@ body.dark-mode header {
       width: 1375px;
       height: 950px;
       margin: 0 2rem;
+    }
+
+    #shop h2{
+      font-family: var(--main-title);
+      font-size: 20pt;
+      text-align: center;
+      font-weight: bold;
+      margin: 2.5rem 0 1rem 0;
+    }
+
+    #grid-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem .015rem;
+    }
+
+    .plants{
+      background: white;
+      margin: 0 1rem 0 1rem;
+      border-radius: 10px;
+      border: 2px solid var(--dark-green);
+    }
+
+    .plants h3{
+      font-family: var(--sub-title);
+      font-size: 18pt;
+      margin: 0 0 1rem 2rem;
+      padding-top: 1rem;
+      font-weight: bold;
+    }
+
+    .plants img{
+      width: 200px;
+      height: auto;
+      border-radius: 5px;
+      float: left;
+      margin: 0 1rem 1rem 2rem;
+    }
+
+    .plants h4{
+      font-family: var(--main-text);
+      font-size: 16pt;
+      flex: 1;
+      font-weight: bold;
+      margin-bottom: .25rem;
+    }
+
+    .plants p{
+      font-family: var(--main-text);
+      font-size: 13pt;
+      margin: .5rem;
     }
 
 
