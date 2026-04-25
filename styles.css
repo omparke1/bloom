@@ -241,7 +241,7 @@ body.dark-mode header {
 
     .plants h4{
       font-family: var(--main-text);
-      font-size: 16pt;
+      font-size: 14pt;
       flex: 1;
       font-weight: bold;
       margin-bottom: .25rem;
@@ -251,6 +251,18 @@ body.dark-mode header {
       font-family: var(--main-text);
       font-size: 13pt;
       margin: .5rem;
+    }
+
+    .plants h5{
+      font-family: var(--main-text);
+      font-size: 13pt;
+      font-weight: bold;
+      margin-top: .5rem;
+    }
+
+    .plants button{
+      float: right;
+      margin: .5rem 7rem 1rem 0;
     }
 
 
