@@ -50,6 +50,7 @@ table {
 
 /*root variables*/
 :root {
+    --super-dg: rgb(54, 72, 50);
     --light-green: #AABC5C;
     --dark-green: #565F29;
     --white: #F2F3EE;
@@ -83,7 +84,7 @@ table {
       body{
         font-family: var(--main-text);
         padding-top: 2.5rem;
-      color: var(--dark-green);
+      background: var(--white);
       }
 
       body.dark-mode{
@@ -92,17 +93,9 @@ table {
       }
 
 body.dark-mode header {
-  background: var(--light-pink);
-  color: black;
+  background: var(--super-dg);
 }
 
-body.dark-mode ul li a {
-  color: black;
-}
-
-body.dark-mode header nav ul li a img {
-  filter: invert(0);
-}
 
       #color-mode{
         margin-right: 3rem;
@@ -195,6 +188,12 @@ body.dark-mode header nav ul li a img {
     header nav ul li a img {
       filter: invert(1);
       margin-top: -.3rem;
+    }
+
+    #storefront {
+      width: 1375px;
+      height: 950px;
+      margin: 0 2rem;
     }
 
 
