@@ -118,6 +118,19 @@ body.dark-mode .tips{
 body.dark-mode #about{
   background: var(--super-dg);
 }
+
+body.dark-mode form{
+  background: var(--super-dg);
+}
+
+body.dark-mode button{
+  background: var(--white);
+  color: black;
+}
+
+body.dark-mode footer{
+  background: var(--super-dg);
+}
 /*----------------------------*/
 
 
@@ -440,6 +453,12 @@ body.dark-mode #about{
       background: var(--white);
       padding: .5rem 2.5rem;
       border-radius: 1rem;
+      font-family: var(--sub-title);
+      font-size: 12pt;
+    }
+
+    #cart-dropdown{
+      padding-bottom: 1.5rem;
     }
 
     #cart-dropdown h2{
@@ -448,7 +467,7 @@ body.dark-mode #about{
       text-align: center;
       font-weight: bold;
       margin: 2.5rem 0 1.5rem 0;
-      padding-top: 1.5rem;
+      padding-top: 2rem;
     }
 
     #cart-dropdown img{
@@ -461,13 +480,50 @@ body.dark-mode #about{
     #cart-dropdown p{
       margin-top: .5rem;
       text-align: center;
+      font-family: var(--sub-title);
+      font-size: 16pt;
     }
 
-    button{
+    #cart-dropdown button{
       display: block;
       margin: 1rem auto;
+      background: var(--dark-green);
+      color: var(--white);
+      padding: .5rem 2rem;
+      border-radius: 1rem;
+      font-family: var(--sub-title);
+      font-size: 12pt;
     }
 
     .cart-total{
       text-align: center;
+      font-family: var(--sub-title);
+      font-size: 16pt;
+    }
+
+    footer {
+      background: var(--dark-green);
+      margin-top: 3rem;
+    }
+
+    footer img{
+      width: 20%;
+      height: auto;
+    }
+
+    footer h2{
+      font-family: var(--main-title);
+      font-size: 22pt;
+      text-align: center;
+      font-weight: bold;
+      margin: 2.5rem 0 0 0;
+      padding-top: 3rem;
+      color: var(--white);
+    }
+
+    .icon-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      filter: invert(1);
+      margin-left: 2rem;
     }
