@@ -186,17 +186,21 @@
             <h2>Contact Us</h2>
 
             <form>
+                <div id="top">
             <label for="fullName">Full Name*</label>
             <input name="fullName" id="fullName" type="text" required>
 
             <label for="pNum">Phone Number*</label>
             <input name="pNum" id="pNum" type="tel" required>
+            </div>
 
+            <div id="bottom">
             <label for="emailAd">Email Address*</label>
             <input name="emailAd" id="emailAd" type="email" required>
 
             <label for="comment">Comments*</label>
             <textarea name="comment" id="comment" required></textarea>
+            </div>
             
             <fieldset>
                 <legend>Preferred Method of Contact*</legend>
@@ -207,13 +211,16 @@
                 <input name="radioB" id="emailP" type="radio" required>
             </fieldset>
 
+            <div id="submit">
             <input type="submit" name="submit">
+            </div>
             </form>
 
         </section>
 
         <section id="cart-dropdown">
             <h2>Cart</h2>
+            <a href="#cart-dropdown"><img src="images/shopping.png" alt="shopping cart icon"></a>
             <button id="cart-btn">Cart (0)</button>
             <div id="cart-content" class="dropdown-content">
                 <ul id="cart-items"></ul>

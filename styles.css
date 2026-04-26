@@ -383,6 +383,61 @@ body.dark-mode #about{
       margin: 0 auto;
     }
 
+    #contact h2{
+      font-family: var(--main-title);
+      font-size: 22pt;
+      text-align: center;
+      font-weight: bold;
+      margin: 2.5rem 0 1.5rem 0;
+      padding-top: 1.5rem;
+    }
 
+    label, fieldset{
+      font-family: var(--sub-title);
+      font-size: 16pt;
+    }
 
+    label{
+      margin-left: 3rem;
+      color: var(--white);
+    }
 
+    #top{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: 1rem;
+      margin-right: 3rem;
+    }
+
+    #bottom{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-right: 3rem;
+    }
+
+    fieldset{
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    form{
+      background: var(--dark-green);
+      margin: 0 15rem;
+      padding: 3rem 2rem 2rem 2rem;
+      border-radius: 2rem;
+    }
+
+    legend{
+      color: var(--white);
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+
+    #submit input{
+      display: block;
+      margin: 1rem auto;
+      color: var(--dark-green);
+      background: var(--white);
+      padding: .5rem 2.5rem;
+      border-radius: 1rem;
+    }
