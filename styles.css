@@ -93,6 +93,7 @@ table {
         overflow-x: hidden;
       }
 
+/*-----  dark-mode changes ----*/
       body.dark-mode{
         background-color: var(--dark-green);
         color: var(--white);
@@ -101,6 +102,23 @@ table {
 body.dark-mode header {
   background: var(--super-dg);
 }
+
+body.dark-mode .plants{
+  color: black;
+}
+
+body.dark-mode #shop{
+  background: var(--super-dg);
+}
+
+body.dark-mode .tips{
+  color: black;
+}
+
+body.dark-mode #about{
+  background: var(--super-dg);
+}
+/*----------------------------*/
 
 
       #color-mode{
