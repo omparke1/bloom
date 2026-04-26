@@ -84,7 +84,6 @@ table {
 
       body{
         font-family: var(--main-text);
-        padding-top: 2.5rem;
       background: var(--white);
       }
 
@@ -178,6 +177,8 @@ body.dark-mode footer{
       justify-content: space-between;
       align-items: center;
       padding: 1rem;
+      position: fixed;
+      padding-top: 3rem;
     }
 
     .header-left{
