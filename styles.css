@@ -278,27 +278,58 @@ body.dark-mode header {
       font-size: 22pt;
       text-align: center;
       font-weight: bold;
-      margin: 2.5rem 0 1rem 0;
+      margin: 2.5rem 0 1.5rem 0;
       padding-top: 1.5rem;
     }
 
     #learn-container{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1rem .015rem;
+      gap: .15rem;
+      justify-items: center;
+      max-width: 85%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
     }
 
     .tips{
       background: white;
-      margin: 0 1rem 0 1rem;
       border-radius: 10px;
       border: 2px solid var(--dark-green);
+      width: 95%;
+      height: 105%;
+    }
+
+    .learn-float{
+      display: flex;
     }
 
     .tips img{
-      width: 30%;
+      width: 40%;
       height: auto;
+      margin-left: 1rem;
+      border-radius: 10px;
     }
+
+    .tips h3{
+      font-family: var(--sub-title);
+      font-size: 18pt;
+      margin: 1.5rem 0 1rem 1rem;
+    }
+
+    .tips p{
+      font-family: var(--main-text);
+      font-size: 13pt;
+      line-height: 1.5rem;
+      margin: 0 2rem 0 1rem;
+    }
+
+    .tips a{
+      display: block;
+      text-align: center;
+      margin: 0.5rem 0 0 1.35rem;
+    }
+
 
 
 
