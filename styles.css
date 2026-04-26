@@ -273,6 +273,10 @@ body.dark-mode header {
       margin: .5rem 7rem 1rem 0;
     }
 
+    #learn{
+      padding-bottom: 4rem;
+    }
+
     #learn h2{
       font-family: var(--main-title);
       font-size: 22pt;
@@ -298,6 +302,7 @@ body.dark-mode header {
       border: 2px solid var(--dark-green);
       width: 95%;
       height: 105%;
+      padding-left: 1rem;
     }
 
     .learn-float{
@@ -328,6 +333,36 @@ body.dark-mode header {
       display: block;
       text-align: center;
       margin: 0.5rem 0 0 1.35rem;
+      color: black;
+    }
+
+    #about{
+      padding: 4rem 0 3rem 0;
+      background: var(--dark-green);
+    }
+
+    #about h2{
+      font-family: var(--main-title);
+      font-size: 22pt;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: var(--white);
+    }
+
+    #about p{
+      font-family: var(--main-text);
+      font-size: 13pt;
+      margin: 0 15rem;
+      text-align: center;
+      color: var(--white);
+    }
+
+    #about img{
+      width: 6%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
 
 
