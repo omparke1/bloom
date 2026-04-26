@@ -441,3 +441,33 @@ body.dark-mode #about{
       padding: .5rem 2.5rem;
       border-radius: 1rem;
     }
+
+    #cart-dropdown h2{
+      font-family: var(--main-title);
+      font-size: 22pt;
+      text-align: center;
+      font-weight: bold;
+      margin: 2.5rem 0 1.5rem 0;
+      padding-top: 1.5rem;
+    }
+
+    #cart-dropdown img{
+      display: block;
+      margin: 0 auto;
+      width: 8%;
+      height: auto;
+    }
+
+    #cart-dropdown p{
+      margin-top: .5rem;
+      text-align: center;
+    }
+
+    button{
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .cart-total{
+      text-align: center;
+    }
