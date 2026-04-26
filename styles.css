@@ -202,18 +202,26 @@ body.dark-mode header {
       margin: 0 2rem;
     }
 
+    #shop{
+      background: var(--dark-green);
+      padding-bottom: 1.5rem;
+    }
+
     #shop h2{
       font-family: var(--main-title);
-      font-size: 20pt;
+      font-size: 22pt;
       text-align: center;
       font-weight: bold;
       margin: 2.5rem 0 1rem 0;
+      color: var(--white);
+      padding-top: 2rem;
     }
 
     #grid-container{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem .015rem;
+      padding-top: .5rem;
     }
 
     .plants{
@@ -263,6 +271,33 @@ body.dark-mode header {
     .plants button{
       float: right;
       margin: .5rem 7rem 1rem 0;
+    }
+
+    #learn h2{
+      font-family: var(--main-title);
+      font-size: 22pt;
+      text-align: center;
+      font-weight: bold;
+      margin: 2.5rem 0 1rem 0;
+      padding-top: 1.5rem;
+    }
+
+    #learn-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem .015rem;
+    }
+
+    .tips{
+      background: white;
+      margin: 0 1rem 0 1rem;
+      border-radius: 10px;
+      border: 2px solid var(--dark-green);
+    }
+
+    .tips img{
+      width: 30%;
+      height: auto;
     }
 
 
