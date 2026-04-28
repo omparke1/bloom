@@ -26,8 +26,18 @@ buttons.forEach(button => {
 const plant = button.closest(".plants");
 const name = plant.querySelector("h3").textContent;
 const price = parseFloat(plant.dataset.price);
+const img = plant.querySelector("img");
+
 const li = document.createElement("li");
-li.textContent = `${name} - $${price.toFixed(2)}`;
+
+const imgClone = img.cloneNode(true);
+imgClone.style.width = "50px";
+
+const text = document.createElement("span");
+text.textContent = `${name} - $${price.toFixed(2)}`;
+
+li.appendChild(imgClone);
+li.appendChild(text);
 cartItems.appendChild(li);
 
 total += price;
