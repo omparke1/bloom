@@ -46,5 +46,15 @@ totalPriceEl.textContent = total.toFixed(2);
 // cart count
 count++;
 cartBtn.textContent = `Cart (${count})`;
+
+const taxPriceEl = document.getElementById("tax-price");
+const taxRate = 0.08;
+
+const tax = total * taxRate;
+taxPriceEl.textContent = tax.toFixed(2);
+
+const finalPriceEl = document.getElementById("final-price");
+const finalTotal = total + tax;
+finalPriceEl.textContent = finalTotal.toFixed(2);
     });
 });

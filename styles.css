@@ -475,7 +475,7 @@ body.dark-mode footer{
 
     #cart-dropdown img{
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 1.5rem;
       width: 8%;
       height: auto;
     }
@@ -502,6 +502,7 @@ body.dark-mode footer{
       text-align: center;
       font-family: var(--sub-title);
       font-size: 16pt;
+      margin-top: 1rem;
     }
 
     footer {
@@ -558,7 +559,7 @@ body.dark-mode footer{
 
     #cart-items{
       border: 2px solid black;
-      margin: 0 10rem;
+      margin: .5rem 10rem 0 10rem;
       padding: .5rem 0 1rem 0; 
       border-radius: 2rem;
     }
