@@ -556,13 +556,24 @@ body.dark-mode footer{
       margin-bottom: 2rem;
     }
 
+    #cart-items{
+      border: 2px solid black;
+      margin: 0 10rem;
+      padding: .5rem 0 1rem 0; 
+      border-radius: 2rem;
+    }
+
     #cart-items li{
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
+      gap: 12px;
+      margin-left: 26rem;
     }
 
     #cart-items span{
-      text-align: left;
+      flex: 1;
+    }
+
+    .cart-total{
+      margin-bottom: 1rem;
     }
