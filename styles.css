@@ -106,10 +106,6 @@ body.dark-mode .plants{
   color: black;
 }
 
-body.dark-mode #shop{
-  background: var(--super-dg);
-}
-
 body.dark-mode .tips{
   color: black;
 }
@@ -129,6 +125,10 @@ body.dark-mode #cart-dropdown button{
 
 body.dark-mode footer{
   background: var(--super-dg);
+}
+
+body.dark-mode .skip-to-next{
+  color: var(--white);
 }
 /*----------------------------*/
 
@@ -167,6 +167,10 @@ body.dark-mode footer{
     padding-left: 2.5rem;
     font-family: var(--sub-title);
       font-size: 13pt;
+    }
+
+    main img{
+      border-radius: 2rem;
     }
 
     header{
@@ -237,7 +241,6 @@ body.dark-mode footer{
     }
 
     #shop{
-      background: var(--dark-green);
       padding-bottom: 1.5rem;
     }
 
@@ -305,6 +308,25 @@ body.dark-mode footer{
     .plants button{
       float: right;
       margin: .5rem 7rem 1rem 0;
+      background: var(--dark-green);
+      color: var(--white);
+      padding: .5rem 2rem;
+      border-radius: 1rem;
+      font-family: var(--sub-title);
+      font-size: 12pt;
+    }
+
+    #shop a {
+      background: var(--super-dg);
+      color: var(--white);
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      font-family: var(--sub-title);
+      font-size: 12pt;
+      display: block;
+      margin: 1rem auto;
+      width: fit-content;
+      text-decoration: none;
     }
 
     #learn{

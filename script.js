@@ -47,14 +47,42 @@ totalPriceEl.textContent = total.toFixed(2);
 count++;
 cartBtn.textContent = `Cart (${count})`;
 
+// tax count
+
 const taxPriceEl = document.getElementById("tax-price");
 const taxRate = 0.08;
 
 const tax = total * taxRate;
 taxPriceEl.textContent = tax.toFixed(2);
 
+// final count
 const finalPriceEl = document.getElementById("final-price");
 const finalTotal = total + tax;
 finalPriceEl.textContent = finalTotal.toFixed(2);
     });
+});
+
+// checkout reset
+
+checkoutBtn.addEventListener("click", () => {
+
+    if (count === 0){
+        alert("Your cart is empty. Please add items before checking out.");
+        return;
+    }
+
+    const tax = total * taxRate;
+    const finalTotal = total + tax;
+
+    alert(`Thank you for your order!\nTotal: $${finalTotal.toFixed(2)}`);
+
+    cartItems.innerHTML = "";
+
+    total = 0;
+    total = 0;
+
+    totalPriceEl.textContent = "0.00";
+    taxPriceEl.textContent = "0.00";
+    finalPriceEl.textContent = "0.00";
+    cartBtn.textContent = "Cart (0)";
 });
