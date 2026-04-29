@@ -63,6 +63,11 @@ finalPriceEl.textContent = finalTotal.toFixed(2);
 });
 
 // checkout reset
+const checkoutBtn = document.querySelector(".checkout-btn");
+const taxRate = 0.08;
+const taxPriceEl = document.getElementById("tax-price");
+const finalPriceEl = document.getElementById("final-price");
+
 
 checkoutBtn.addEventListener("click", () => {
 
@@ -73,12 +78,10 @@ checkoutBtn.addEventListener("click", () => {
 
     const tax = total * taxRate;
     const finalTotal = total + tax;
-    const checkoutBtn = document.querySelector(".checkout-btn");
-    const taxRate = 0.08;
 
     alert(`Thank you for your order!\nTotal: $${finalTotal.toFixed(2)}`);
 
-    cartItems.innerHTML = "";
+   document.querySelectorAll("#cart-items li").forEach(item => item.remove());
 
     total = 0;
     count = 0;
