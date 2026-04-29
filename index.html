@@ -192,17 +192,21 @@
                 <div id="top">
             <label for="fullName">Full Name*</label>
             <input name="fullName" id="fullName" type="text" required>
+            <span class="error" id="name-error"></span>
 
             <label for="pNum">Phone Number*</label>
             <input name="pNum" id="pNum" type="tel" required>
+            <span class="error" id="phone-error"></span>
             </div>
 
             <div id="bottom">
             <label for="emailAd">Email Address*</label>
             <input name="emailAd" id="emailAd" type="email" required>
+            <span class="error" id="email-error"></span>
 
             <label for="comment">Comments*</label>
             <textarea name="comment" id="comment" required></textarea>
+            <span class="error" id="comment-error"></span>
             </div>
             
             <fieldset>
@@ -217,6 +221,7 @@
             <div id="submit">
             <input type="submit" name="submit">
             </div>
+            <p id="form-message"></p>
             </form>
 
         </section>
