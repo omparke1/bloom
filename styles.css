@@ -169,6 +169,10 @@ body.dark-mode .skip-to-next{
       font-size: 13pt;
     }
 
+    #skip:hover{
+      color: var(--dark-green);
+    }
+
     main img{
       border-radius: 2rem;
     }
@@ -225,6 +229,10 @@ body.dark-mode .skip-to-next{
       margin-right: 1rem;
     }
 
+    header ul a:hover{
+      color: gray;
+    }
+
     ul li {
       margin-top: .5rem;
     }
@@ -250,7 +258,6 @@ body.dark-mode .skip-to-next{
       text-align: center;
       font-weight: bold;
       margin: 2.5rem 0 1rem 0;
-      color: var(--white);
       padding-top: 2rem;
     }
 
@@ -316,6 +323,20 @@ body.dark-mode .skip-to-next{
       font-size: 12pt;
     }
 
+    .plants button:hover{
+      background: var(--super-dg);
+    }
+
+    #shop .skip-to-next{
+      background: none;
+      color: black;
+      text-decoration: underline;
+    }
+
+    #shop .skip-to-next:hover{
+      color: var(--dark-green);
+    }
+
     #shop a {
       background: var(--super-dg);
       color: var(--white);
@@ -327,6 +348,10 @@ body.dark-mode .skip-to-next{
       margin: 1rem auto;
       width: fit-content;
       text-decoration: none;
+    }
+
+    #view-more:hover{
+background: var(--light-green);
     }
 
     #learn{
@@ -390,6 +415,10 @@ body.dark-mode .skip-to-next{
       text-align: center;
       margin: 0.5rem 0 0 1.35rem;
       color: black;
+    }
+
+    .tips a:hover{
+      color: gray;
     }
 
     #about{
@@ -474,12 +503,16 @@ body.dark-mode .skip-to-next{
     #submit input{
       display: block;
       margin: 1rem auto;
-      color: var(--dark-green);
+      color: black;
       background: var(--white);
       padding: .5rem 2.5rem;
       border-radius: 1rem;
       font-family: var(--sub-title);
       font-size: 12pt;
+    }
+
+    #submit input:hover{
+background: var(--light-green);
     }
 
     #cart-dropdown{
@@ -518,6 +551,10 @@ body.dark-mode .skip-to-next{
       border-radius: 1rem;
       font-family: var(--sub-title);
       font-size: 12pt;
+    }
+
+    #cart-dropdown button:hover{
+      background: var(--super-dg);
     }
 
     .cart-total{
@@ -569,14 +606,21 @@ body.dark-mode .skip-to-next{
       padding: 1rem 2rem;
     }
 
+    #footer a:hover{
+      color: var(--dark-green);
+    }
+
     .skip-to-next{
       color: black;
       font-family: var(--sub-title);
       font-size: 12pt;
-      color: black;
       text-align: center;
       display: block;
       margin-bottom: 2rem;
+    }
+
+    .skip-to-next:hover{
+      color: gray;
     }
 
     #cart-items{

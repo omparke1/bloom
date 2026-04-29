@@ -73,13 +73,15 @@ checkoutBtn.addEventListener("click", () => {
 
     const tax = total * taxRate;
     const finalTotal = total + tax;
+    const checkoutBtn = document.querySelector(".checkout-btn");
+    const taxRate = 0.08;
 
     alert(`Thank you for your order!\nTotal: $${finalTotal.toFixed(2)}`);
 
     cartItems.innerHTML = "";
 
     total = 0;
-    total = 0;
+    count = 0;
 
     totalPriceEl.textContent = "0.00";
     taxPriceEl.textContent = "0.00";
