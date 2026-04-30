@@ -64,6 +64,18 @@ if (!selectedContact){
    alert("Please select a preffered contact method.");
     isValid = false;
 }
+
+const customer = {
+    name: nameInput.value.trim(),
+    phone: phoneInput.value.trim(),
+    email: emailInput.value.trim(),
+    comment: commentInput.value.trim(),
+    preferredContact: selectContact.value
+};
+
+messageEl.textContent = `Thank you, ${customer.name}! We will contact you via ${customer.preferredContact}.`;
+
+form.reset();
 });
 
 
@@ -90,6 +102,7 @@ const imgClone = img.cloneNode(true);
 imgClone.style.width = "50px";
 
 const text = document.createElement("span");
+
 text.textContent = `${name} - $${price.toFixed(2)}`;
 
 li.appendChild(imgClone);
