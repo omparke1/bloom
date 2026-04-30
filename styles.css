@@ -230,7 +230,7 @@ body.dark-mode .skip-to-next{
     }
 
     header ul a:hover{
-      color: gray;
+      color: var(--super-dg);
     }
 
     ul li {
@@ -257,8 +257,7 @@ body.dark-mode .skip-to-next{
       font-size: 22pt;
       text-align: center;
       font-weight: bold;
-      margin: 2.5rem 0 1rem 0;
-      padding-top: 2rem;
+      margin: 2rem 0 1rem 0;
     }
 
     #grid-container{
@@ -363,8 +362,7 @@ background: var(--light-green);
       font-size: 22pt;
       text-align: center;
       font-weight: bold;
-      margin: 2.5rem 0 1.5rem 0;
-      padding-top: 1.5rem;
+      margin: 2rem 0 1.5rem 0;
     }
 
     #learn-container{
@@ -422,7 +420,8 @@ background: var(--light-green);
     }
 
     #about{
-      padding: 4rem 0 3rem 0;
+      margin-top: 1rem;
+      padding: 3rem 0 3rem 0;
       background: var(--dark-green);
     }
 
@@ -455,8 +454,7 @@ background: var(--light-green);
       font-size: 22pt;
       text-align: center;
       font-weight: bold;
-      margin: 2.5rem 0 1.5rem 0;
-      padding-top: 1.5rem;
+      margin: 2rem 0 1.5rem 0;
     }
 
     label, fieldset{
@@ -465,21 +463,21 @@ background: var(--light-green);
     }
 
     label{
-      margin-left: 3rem;
+      margin-left: 1rem;
       color: var(--white);
     }
 
     #top{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr -1fr 1fr;
       margin-bottom: 1rem;
-      margin-right: 3rem;
+      margin: 0 9rem;
     }
 
     #bottom{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-right: 3rem;
+      grid-template-columns: 1fr 1fr -1fr 1fr;
+      margin: 0 9rem;
     }
 
     fieldset{
@@ -487,11 +485,19 @@ background: var(--light-green);
       margin-top: 2rem;
     }
 
-    form{
+    #contact{
       background: var(--dark-green);
-      margin: 0 15rem;
-      padding: 3rem 2rem 2rem 2rem;
+      margin: 1rem 15rem 0;
+      padding: .15rem 2rem 1rem 2rem;
       border-radius: 2rem;
+    }
+
+    #contact h2{
+      color: var(--white);
+    }
+
+    form input{
+      margin-bottom: 1rem;
     }
 
     legend{
@@ -524,8 +530,7 @@ background: var(--light-green);
       font-size: 22pt;
       text-align: center;
       font-weight: bold;
-      margin: 2.5rem 0 1.5rem 0;
-      padding-top: 2rem;
+      margin: 2rem 0 1.5rem 0;
     }
 
     #cart-dropdown img{
@@ -614,9 +619,13 @@ background: var(--light-green);
       color: black;
       font-family: var(--sub-title);
       font-size: 12pt;
-      text-align: center;
+      text-align: left;
       display: block;
-      margin-bottom: 2rem;
+      margin: 4rem 2rem 0 2rem;
+      background: var(--white);
+      border: 2px solid var(--dark-green);
+      border-radius: 2rem;
+      padding: 1rem;
     }
 
     .skip-to-next:hover{
