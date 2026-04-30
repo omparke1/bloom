@@ -521,6 +521,18 @@ background: var(--light-green);
 background: var(--light-green);
     }
 
+    .error {
+      color: red;
+      text-align: center;
+      display: block;
+      font-weight: bold;
+    }
+
+    #form-message{
+      color: var(--white);
+      text-align: center;
+    }
+
     #cart-dropdown{
       padding-bottom: 1.5rem;
     }

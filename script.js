@@ -23,7 +23,7 @@ const nameError = document.getElementById("name-error");
 const phoneError = document.getElementById("phone-error");
 const emailError = document.getElementById("email-error");
 const commentError = document.getElementById("comment-error");
-const messageEl = document.getElementById("comment-error");
+const messageEl = document.getElementById("form-message");
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phoneRegex = /^\d{10}$/;
@@ -61,8 +61,22 @@ if (commentInput.value.trim() === ""){
 
 const selectedContact = document.querySelector('input[name="radioB"]:checked');
 if (!selectedContact){
-   alert("Please select a preffered contact method.");
+   alert("Please select a preferred contact method.");
     isValid = false;
+}else{
+    if (selectedContact.value === "Phone") {
+        if (!phoneRegex.test(phoneInput.value.trim())){
+            phoneError.textContent = "Enter a valid 10 digit phone number.";
+            isValid = false;
+        }
+    }
+
+    if (selectedContact.value === "Email") {
+        if (!emailRegex.test(emailInput.value.trim())){
+          emailError.textContent = "Enter a valid email address."; 
+          isValid = false;
+        }
+    }
 }
 
 if (isValid){
@@ -74,7 +88,7 @@ const customer = {
     preferredContact: selectedContact.value
 };
 
-messageEl.textContent = `Thank you, ${customer.name}! We will contact you via ${customer.preferredContact}.`;
+messageEl.textContent = `Thank you, ${customer.name}! We will contact you via ${customer.preferredContact}. Your comment: "${customer.comment}"`;
 
 form.reset();
 }
