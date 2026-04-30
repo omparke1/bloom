@@ -10,6 +10,21 @@ toggle.addEventListener("click", (e) => {
     document.body.classList.toggle("dark-mode");
 });
 
+// form errors
+
+const form = document.querySelector("form");
+
+const nameInput = document.getElementById("fullName");
+const phoneInput = document.getElementById("pNum");
+const emailInput = document.getElementById("emailAd");
+const commentInput = document.getElementById("comment");
+
+const nameError = document.getElementById("fullName");
+const phoneError = document.getElementById("pNum");
+const emailError = document.getElementById("emailAd");
+const commentError = document.getElementById("comment");
+
+
 
 // shop section pricing
 
