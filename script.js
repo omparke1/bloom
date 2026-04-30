@@ -23,7 +23,48 @@ const nameError = document.getElementById("fullName");
 const phoneError = document.getElementById("pNum");
 const emailError = document.getElementById("emailAd");
 const commentError = document.getElementById("comment");
+const messageEl = document.getElementById("form-message");
 
+const emailRegex = /^[^\s@]+@[^\s@]\.[^\s@]+$/;
+const phoneRegex = /^d{10}$/;
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let isValid = true;
+
+    nameError.textContent = "";
+    phoneError.textContent = "";
+    emailError.textContent = "";
+    commentError.textContent = "";
+    messageEl.textContent = "";
+
+if (nameInput.value.trim() === ""){
+    nameError.textContent = "Please enter your full name.";
+    isValid = false;
+}
+
+if (!phoneRegex.test(emailInput.value.trim())){
+    phoneError.textContent = "Please enter a valid 10 digit number";
+    isValid = false;
+}
+
+if (!emailRegex.test(emailInput.value.trim())){
+    emailError.textContent = "Please enter a valid email";
+    isValid = false;
+}
+
+if (commentInput.value.trim() === ""){
+    commentError.textContent = "Please enter a comment.";
+    isValid = false;
+}
+
+const selectedContact = document.querySelector('input[name="radioB"]:checked');
+if (!selectedContact){
+   alert("Please select a preffered contact method.");
+    isValid = false;
+}
+});
 
 
 // shop section pricing
