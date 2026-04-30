@@ -19,14 +19,14 @@ const phoneInput = document.getElementById("pNum");
 const emailInput = document.getElementById("emailAd");
 const commentInput = document.getElementById("comment");
 
-const nameError = document.getElementById("fullName");
-const phoneError = document.getElementById("pNum");
-const emailError = document.getElementById("emailAd");
-const commentError = document.getElementById("comment");
-const messageEl = document.getElementById("form-message");
+const nameError = document.getElementById("name-error");
+const phoneError = document.getElementById("phone-error");
+const emailError = document.getElementById("email-error");
+const commentError = document.getElementById("comment-error");
+const messageEl = document.getElementById("comment-error");
 
-const emailRegex = /^[^\s@]+@[^\s@]\.[^\s@]+$/;
-const phoneRegex = /^d{10}$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneRegex = /^\d{10}$/;
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -44,7 +44,7 @@ if (nameInput.value.trim() === ""){
     isValid = false;
 }
 
-if (!phoneRegex.test(emailInput.value.trim())){
+if (!phoneRegex.test(phoneInput.value.trim())){
     phoneError.textContent = "Please enter a valid 10 digit number";
     isValid = false;
 }
@@ -65,17 +65,19 @@ if (!selectedContact){
     isValid = false;
 }
 
+if (isValid){
 const customer = {
     name: nameInput.value.trim(),
     phone: phoneInput.value.trim(),
     email: emailInput.value.trim(),
     comment: commentInput.value.trim(),
-    preferredContact: selectContact.value
+    preferredContact: selectedContact.value
 };
 
 messageEl.textContent = `Thank you, ${customer.name}! We will contact you via ${customer.preferredContact}.`;
 
 form.reset();
+}
 });
 
 
