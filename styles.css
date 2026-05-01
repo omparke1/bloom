@@ -114,13 +114,8 @@ body.dark-mode #about{
   background: var(--super-dg);
 }
 
-body.dark-mode form{
+body.dark-mode #contact{
   background: var(--super-dg);
-}
-
-body.dark-mode #cart-dropdown button{
-  background: var(--white);
-  color: black;
 }
 
 body.dark-mode footer{
@@ -128,7 +123,11 @@ body.dark-mode footer{
 }
 
 body.dark-mode .skip-to-next{
-  color: var(--white);
+  color: var(--dark-green);
+}
+
+body.dark-mode #cart-shop{
+  border-bottom: 2px solid var(--super-dg);
 }
 /*----------------------------*/
 
