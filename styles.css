@@ -577,26 +577,29 @@ background: var(--light-green);
     }
 
     label{
-      margin-left: 1rem;
+      margin-left: -1rem;
+      margin-bottom: 1rem;
       color: var(--white);
     }
 
     #top{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 2fr;
       margin-bottom: 1rem;
       margin: 0 9rem;
     }
 
     #bottom{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 2fr;
       margin: 0 9rem;
     }
 
     fieldset{
       text-align: center;
       margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     #contact{
@@ -612,6 +615,20 @@ background: var(--light-green);
 
     form input{
       margin-bottom: 1rem;
+      width: 300%;
+      height: 1rem;
+    }
+
+    fieldset label{
+      margin-left: 12rem;
+    }
+
+    fieldset input{
+      width: 25%;
+    }
+
+    textarea{
+      width: 300%;
     }
 
     legend{
@@ -629,6 +646,8 @@ background: var(--light-green);
       border-radius: 1rem;
       font-family: var(--sub-title);
       font-size: 12pt;
+      width: 15%;
+      height: auto;
     }
 
     #submit input:hover{
