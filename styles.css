@@ -245,7 +245,7 @@ body.dark-mode .skip-to-next{
     #storefront {
       width: 1275px;
       height: 950px;
-      margin: 0 auto;
+      margin: 0 auto 4rem;
       display: block;
     }
 
@@ -296,6 +296,8 @@ body.dark-mode .skip-to-next{
     #cart-shop{
       display: grid;
       grid-template-columns: 2fr 1fr;
+      border-bottom: 2px solid var(--dark-green);
+      margin-bottom: 4rem;
     }
 
     #cart-btn{
@@ -465,7 +467,7 @@ background: var(--light-green);
     }
 
     #learn{
-      padding-bottom: .5rem;
+      margin-bottom: 6rem;
     }
 
     #learn h2{
@@ -531,9 +533,10 @@ background: var(--light-green);
     }
 
     #about{
-      margin-top: 1rem;
+      margin-top: 2rem;
       padding: 3rem 0 3rem 0;
       background: var(--dark-green);
+      margin-bottom: 4rem;
     }
 
     #about h2{
@@ -559,7 +562,7 @@ background: var(--light-green);
       display: block;
       margin: 0 auto;
     }
-
+    
     #contact h2{
       font-family: var(--main-title);
       font-size: 22pt;
@@ -598,7 +601,7 @@ background: var(--light-green);
 
     #contact{
       background: var(--dark-green);
-      margin: 1rem 15rem 0;
+      margin: 2rem 15rem 0;
       padding: .15rem 2rem 1rem 2rem;
       border-radius: 2rem;
     }
@@ -695,12 +698,11 @@ background: var(--light-green);
       font-family: var(--sub-title);
       font-size: 12pt;
       text-align: left;
-      display: block;
-      margin: 4rem 2rem 0 2rem;
+      margin: 4rem 30rem 2rem 40rem;
       background: var(--white);
       border: 2px solid var(--dark-green);
       border-radius: 2rem;
-      padding: 1rem;
+      padding: .5rem;
     }
 
     .skip-to-next:hover{
