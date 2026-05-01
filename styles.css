@@ -623,7 +623,7 @@ background: var(--light-green);
     }
 
     fieldset label{
-      margin-left: 12rem;
+      margin-left: 10rem;
     }
 
     fieldset input{
@@ -645,7 +645,7 @@ background: var(--light-green);
       margin: 1rem auto;
       color: black;
       background: var(--white);
-      padding: .5rem 2.5rem;
+      padding: .5rem 1.5rem;
       border-radius: 1rem;
       font-family: var(--sub-title);
       font-size: 12pt;
