@@ -149,7 +149,7 @@ body.dark-mode #cart-shop{
       h1, h2{
         font-family: var(--main-title);
       }
-    
+  
       h3{
         font-family: var(--sub-title);
       }
@@ -229,7 +229,6 @@ body.dark-mode #cart-shop{
     header ul a {
       text-decoration: none;
       color: var(--white);
-      margin-right: 1rem;
     }
 
     header ul a:hover{
@@ -246,10 +245,29 @@ body.dark-mode #cart-shop{
     }
 
     #storefront {
-      width: 1120px;
-      height: 650px;
-      margin: 0 auto 4rem;
+      width: 630px;
+      height: 390px;
+      margin: 11rem 3rem auto 9rem;
       display: block;
+    }
+    #landing-page{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 2rem;
+    }
+
+    #landing-page h1{
+      margin: 16rem 15rem 0 0;
+      line-height: 3rem;
+      color: var(--super-dg);
+      font-size: 25pt;
+    }
+
+    #landing-page a img{
+       width: 115px;
+       height: auto;
+       float: left;
+       margin-left: 1rem;
     }
 
     #shop-header{
