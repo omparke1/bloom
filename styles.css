@@ -141,6 +141,10 @@ body.dark-mode #cart-shop{
         border-radius: 4.5rem;
         border: 1px solid var(--bright-pink);
       }
+
+      #screen-size{
+        width: 1280px;
+      }
     
       h1, h2{
         font-family: var(--main-title);
@@ -242,7 +246,7 @@ body.dark-mode #cart-shop{
     }
 
     #storefront {
-      width: 1275px;
+      width: 1120px;
       height: 950px;
       margin: 0 auto 4rem;
       display: block;
@@ -263,7 +267,7 @@ body.dark-mode #cart-shop{
     #cart-dropdown{
       border: 2px solid var(--dark-green);
       border-radius: 1rem;
-      margin: .5rem 6rem 24rem 6rem;
+      margin: .5rem 6rem 27rem 6rem;
       background: var(--dark-green);
     }
 
@@ -284,12 +288,12 @@ body.dark-mode #cart-shop{
     #cart-dropdown img{
       width: 22%;
       height: auto;
-      margin: .25rem 0 .25rem 5rem;
+      margin: .25rem 0 .25rem 4rem;
     }
 
     #cart-header img{
       filter: invert(1);
-      margin-top: 2.25rem;
+      margin-top: 2.35rem;
     }
 
     #cart-shop{
@@ -716,7 +720,7 @@ background: var(--light-green);
       font-family: var(--sub-title);
       font-size: 12pt;
       text-align: left;
-      margin: 4rem 30rem 2rem 40rem;
+      margin: 4rem 21rem 2rem 35rem;
       background: var(--white);
       border: 2px solid var(--dark-green);
       border-radius: 2rem;
