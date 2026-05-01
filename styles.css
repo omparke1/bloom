@@ -243,9 +243,117 @@ body.dark-mode .skip-to-next{
     }
 
     #storefront {
-      width: 1375px;
+      width: 1275px;
       height: 950px;
-      margin: 0 2rem;
+      margin: 0 auto;
+      display: block;
+    }
+
+    #shop-header{
+      font-family: var(--main-title);
+      font-size: 22pt;
+      text-align: center;
+      font-weight: bold;
+      margin: 2rem 0 .5rem 0;
+      background: var(--super-dg);
+      display: block;
+      padding: 1rem 0;
+      color: var(--white);
+    }
+
+    #cart-dropdown{
+      border: 2px solid var(--dark-green);
+      border-radius: 1rem;
+      margin: .5rem 6rem 24rem 6rem;
+      background: var(--dark-green);
+    }
+
+    #cart-dropdown h2{
+      font-family: var(--main-title);
+      font-size: 22pt;
+      font-weight: bold;
+      margin-top: 2.35rem;
+      text-align: left;
+      color: var(--white)
+    }
+
+    #cart-header{
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+    }
+
+    #cart-dropdown img{
+      width: 22%;
+      height: auto;
+      margin: .25rem 0 .25rem 5rem;
+    }
+
+    #cart-header img{
+      filter: invert(1);
+      margin-top: 2.25rem;
+    }
+
+    #cart-shop{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+
+    #cart-btn{
+      font-family: var(--sub-title);
+      font-size: 16pt;
+      text-align: left;
+      color: var(--white);
+    }
+
+    #cart-dropdown p{
+      margin-top: .5rem;
+      text-align: center;
+      font-family: var(--sub-title);
+      font-size: 16pt;
+      color: var(--white)
+    }
+
+    #cart-dropdown button{
+      display: block;
+      margin: 1rem auto;
+      background: var(--super-dg);
+      color: var(--white);
+      padding: .5rem 2rem;
+      border-radius: 1rem;
+      font-family: var(--sub-title);
+      font-size: 12pt;
+    }
+
+    #cart-dropdown button:hover{
+      background: var(--light-green);
+    }
+
+    .cart-total{
+      text-align: left;
+      font-family: var(--sub-title);
+      font-size: 16pt;
+      margin-top: 1rem;
+      color: var(--white)
+    }
+
+    #cart-items{
+      margin: .5rem 2rem 0 2rem;
+      padding: .5rem 0 0rem 0; 
+    }
+
+    #cart-items li{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-left: -5rem;
+    }
+
+    #cart-items span{
+      flex: 1;
+    }
+
+    .cart-total{
+      margin-bottom: 1rem;
     }
 
     #shop{
@@ -253,54 +361,56 @@ body.dark-mode .skip-to-next{
     }
 
     #shop h2{
-      font-family: var(--main-title);
-      font-size: 22pt;
-      text-align: center;
-      font-weight: bold;
-      margin: 2rem 0 1rem 0;
+      content-visibility: hidden;
     }
 
     #grid-container{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1rem .015rem;
       padding-top: .5rem;
     }
 
     .plants{
       background: white;
-      margin: 0 1rem 0 1rem;
+      margin: 0 -4rem 1rem 5rem;
       border-radius: 10px;
       border: 2px solid var(--dark-green);
     }
 
     .plants h3{
       font-family: var(--sub-title);
-      font-size: 18pt;
-      margin: 0 0 1rem 2rem;
+      font-size: 14pt;
+      text-align: center;
       padding-top: 1rem;
       font-weight: bold;
+      margin-bottom: 1rem;
     }
 
     .plants img{
-      width: 200px;
+      width: 115px;
       height: auto;
       border-radius: 5px;
       float: left;
-      margin: 0 1rem 1rem 2rem;
+      margin: 0 1rem 1rem 1rem;
     }
 
     .plants h4{
       font-family: var(--main-text);
-      font-size: 14pt;
+      font-size: 13pt;
       flex: 1;
       font-weight: bold;
       margin-bottom: .25rem;
+      margin-left: 6rem;
+    }
+
+    .season {
+      display: block;
+      margin-left: 9.25rem;
     }
 
     .plants p{
       font-family: var(--main-text);
-      font-size: 13pt;
+      font-size: 12pt;
       margin: .5rem;
     }
 
@@ -309,11 +419,12 @@ body.dark-mode .skip-to-next{
       font-size: 13pt;
       font-weight: bold;
       margin-top: .5rem;
+      margin-left: 9.25rem;
     }
 
     .plants button{
       float: right;
-      margin: .5rem 7rem 1rem 0;
+      margin: .5rem 3rem 1rem 0;
       background: var(--dark-green);
       color: var(--white);
       padding: .5rem 2rem;
@@ -344,7 +455,7 @@ body.dark-mode .skip-to-next{
       font-family: var(--sub-title);
       font-size: 12pt;
       display: block;
-      margin: 1rem auto;
+      margin-left: 30rem;
       width: fit-content;
       text-decoration: none;
     }
@@ -354,7 +465,7 @@ background: var(--light-green);
     }
 
     #learn{
-      padding-bottom: 4rem;
+      padding-bottom: .5rem;
     }
 
     #learn h2{
@@ -533,57 +644,9 @@ background: var(--light-green);
       text-align: center;
     }
 
-    #cart-dropdown{
-      padding-bottom: 1.5rem;
-    }
-
-    #cart-dropdown h2{
-      font-family: var(--main-title);
-      font-size: 22pt;
-      text-align: center;
-      font-weight: bold;
-      margin: 2rem 0 1.5rem 0;
-    }
-
-    #cart-dropdown img{
-      display: block;
-      margin: 0 auto 1.5rem;
-      width: 8%;
-      height: auto;
-    }
-
-    #cart-dropdown p{
-      margin-top: .5rem;
-      text-align: center;
-      font-family: var(--sub-title);
-      font-size: 16pt;
-    }
-
-    #cart-dropdown button{
-      display: block;
-      margin: 1rem auto;
-      background: var(--dark-green);
-      color: var(--white);
-      padding: .5rem 2rem;
-      border-radius: 1rem;
-      font-family: var(--sub-title);
-      font-size: 12pt;
-    }
-
-    #cart-dropdown button:hover{
-      background: var(--super-dg);
-    }
-
-    .cart-total{
-      text-align: center;
-      font-family: var(--sub-title);
-      font-size: 16pt;
-      margin-top: 1rem;
-    }
-
     footer {
       background: var(--dark-green);
-      margin-top: 3rem;
+      margin-top: 5rem;
     }
 
     footer img{
@@ -642,25 +705,4 @@ background: var(--light-green);
 
     .skip-to-next:hover{
       color: gray;
-    }
-
-    #cart-items{
-      margin: .5rem 10rem 0 10rem;
-      padding: .5rem 0 1rem 0; 
-      border-radius: 2rem;
-    }
-
-    #cart-items li{
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-left: 26rem;
-    }
-
-    #cart-items span{
-      flex: 1;
-    }
-
-    .cart-total{
-      margin-bottom: 1rem;
     }
