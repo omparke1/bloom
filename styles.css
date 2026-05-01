@@ -583,14 +583,14 @@ background: var(--light-green);
 
     #top{
       display: grid;
-      grid-template-columns: 1fr 1fr -1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       margin-bottom: 1rem;
       margin: 0 9rem;
     }
 
     #bottom{
       display: grid;
-      grid-template-columns: 1fr 1fr -1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       margin: 0 9rem;
     }
 
