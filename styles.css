@@ -134,7 +134,7 @@ body.dark-mode #cart-shop{
 
       #color-mode{
         margin-right: 3rem;
-        width: 14%;
+        width: 15%;
         height: auto;
         cursor: pointer;
         background: var(--white);
@@ -740,7 +740,7 @@ background: var(--light-green);
       font-family: var(--sub-title);
       font-size: 12pt;
       text-align: center;
-      margin: 3rem auto 2rem 35rem;
+      margin: 2rem auto 2rem 35rem;
       background: var(--white);
       border: 2px solid var(--dark-green);
       border-radius: 2rem;
